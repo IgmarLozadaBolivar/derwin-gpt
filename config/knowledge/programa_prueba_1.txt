@@ -1,0 +1,49 @@
+SET a 8
+SET b a
+PRINT a
+
+ADD a 4
+PRINT a
+MUL a 3
+PRINT b
+SUB a 3
+PRINT a
+DIV a 4
+PRINT a
+
+PRINT inicio_condicionales
+
+SET contador 0
+LOOP 5
+ADD contador 1
+END
+
+IF a > 5 PRINT mayor_que_5
+IF a != 6 PRINT diferente_de_6
+IF a == 6 PRINT igual_a_6
+IF a >= 6 PRINT mayor_igual_6
+IF a < 5 PRINT menor_que_5
+IF a <= 6 PRINT menor_igual_6
+
+IF a > 2 SET limite 100
+PRINT limite
+
+SET total 0
+LOOP 4
+LOOP 3
+ADD total 1
+END
+END
+PRINT total
+
+PRINT contador
+
+SET factorial 1
+SET i 1
+LOOP 6
+MUL factorial i
+ADD i 1
+END
+PRINT factorial
+
+ADD resultado_final 1

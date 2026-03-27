@@ -1,0 +1,48 @@
+SET x 12
+SET y x
+
+ADD x 6
+PRINT y
+MUL x 2
+PRINT x
+SUB x 5
+DIV x 7
+PRINT x
+
+SET acumulado 0
+LOOP 2
+LOOP 4
+ADD acumulado 1
+END
+END
+
+PRINT inicio_condicionales
+
+IF x != 4 PRINT diferente_de_4
+IF x == 4 PRINT igual_a_4
+IF x > 3 PRINT mayor_que_3
+IF x <= 4 PRINT menor_igual_4
+IF x >= 4 PRINT mayor_igual_4
+IF x < 3 PRINT menor_que_3
+
+IF x > 1 SET tope 50
+PRINT tope
+
+SET contador 0
+LOOP 3
+ADD contador 2
+END
+PRINT contador
+
+PRINT acumulado
+
+SET factorial 1
+SET n 1
+LOOP 5
+MUL factorial n
+ADD n 1
+END
+PRINT factorial
+
+SET divisor 0
+DIV x divisor
