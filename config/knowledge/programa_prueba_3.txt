@@ -1,0 +1,50 @@
+SET p 15
+SET q p
+PRINT q
+
+ADD p 5
+SUB p 8
+PRINT p
+MUL p 2
+PRINT p
+DIV p 6
+PRINT p
+
+SET suma 0
+LOOP 5
+LOOP 2
+ADD suma 1
+END
+END
+
+PRINT inicio_condicionales
+
+IF p == 4 PRINT igual_a_4
+IF p != 4 PRINT diferente_de_4
+IF p > 4 PRINT mayor_que_4
+IF p <= 4 PRINT menor_igual_4
+IF p >= 4 PRINT mayor_igual_4
+IF p < 4 PRINT menor_que_4
+
+IF p > 0 SET base 200
+PRINT base
+
+SET factorial 1
+SET k 1
+LOOP 4
+MUL factorial k
+ADD k 1
+END
+PRINT factorial
+
+PRINT suma
+
+SET contador 0
+LOOP 6
+ADD contador 1
+END
+PRINT contador
+
+SET extra 0
+LOOP 3
+ADD extra 1
