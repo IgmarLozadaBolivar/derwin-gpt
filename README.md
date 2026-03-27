@@ -25,7 +25,7 @@ El proyecto se divide en tres capas fundamentales:
 2. **Capa de Contexto (Knowledge Files):**
    - `adso_code_algoritmo.docx` — Especificación técnica del lenguaje ADSO.
    - `adso_code_presentacion.docx` — Formato completo de la competencia: roles, fases, restricciones y puntuación.
-   - `fase_actual.md` — Variable de fase activa. Se reemplaza manualmente antes de cada fase.
+   - `current_phase.md` — Variable de fase activa. Se reemplaza manualmente antes de cada fase.
 
 3. **Capa de Entrada (`conversation_starters.json`):** Los cuatro disparadores predefinidos que orientan al usuario según su rol en la competencia.
 
@@ -33,9 +33,9 @@ El proyecto se divide en tres capas fundamentales:
 
 ## 🚀 Cómo opera DERWIN durante la competencia
 
-Antes de cada fase, el organizador reemplaza el archivo `fase_actual.md` en el Knowledge del GPT con el valor correspondiente:
+Antes de cada fase, el organizador reemplaza el archivo `current_phase.md` en el Knowledge del GPT con el valor correspondiente:
 
-| Momento | Valor en `fase_actual.md` |
+| Momento | Valor en `current_phase.md` |
 |---|---|
 | Antes de iniciar | `FASE: SIN INICIAR` |
 | Fase de Análisis | `FASE: ANALISIS` |
@@ -69,11 +69,19 @@ Los cuatro puntos de entrada predefinidos según el perfil del usuario:
 ## 📁 Archivos del repositorio
 
 ```
-derwin/
-├── derwin_instructions.md       # System prompt del GPT
-├── conversation_starters.json   # Disparadores de conversación
-├── fase_actual.md               # Variable de fase activa (reemplazable)
-└── README.md                    # Este archivo
+instructions.md - Instrucciones del GPT
+conversation_starters.json - Conversaciones iniciales
+current_phase.md - Fase actual de ejecución
+README.md - Documentación del proyecto
+adso_code_algoritmo.docx - Algoritmo que se empleará en la competencia
+adso_code_presentacion.docx - Presentación que se empleará en la competencia
+programa_prueba1.txt - Archivo de entrada 1
+programa_prueba2.txt - Archivo de entrada 2
+programa_prueba3.txt - Archivo de entrada 3
+DerwinWorkflow.png - Flujo de trabajo del GPT
+avatar-large.png - Avatar en su formato cuerpo completo
+avatar-short.png - Avatar recortado en formato perfil
+avatar.md - Propmt utilizado para generar el avatar
 ```
 
 ---
