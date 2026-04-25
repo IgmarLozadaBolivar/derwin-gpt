@@ -2,7 +2,7 @@
 
 > **Versión:** 1.0-BETA  
 > 
-> **Estado:** Experimental
+> **Estado:** Experimenta
 > 
 > **Motor Lógico:** `knowledge`
 
